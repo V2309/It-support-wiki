@@ -3,6 +3,7 @@
 | | |
 | --- | --- |
 | Cấp độ | L1 |
+| Mức ưu tiên thường gặp | P3; P1/P2 nếu nhiều người hoặc cả khu vực bị ảnh hưởng |
 | Thời gian xử lý ước tính | 10-20 phút |
 | Cần quyền quản trị | Một số bước cuối (reset Winsock) |
 | Cập nhật lần cuối | 2026-10-09 |
@@ -21,6 +22,12 @@
 - Có truy cập được trang nội bộ nhưng không ra Internet, hay hoàn toàn không có gì?
 
 Nếu nhiều người cùng bị, đừng xử lý từng máy: chuyển ngay cho nhóm mạng (xem mục "Khi nào chuyển cấp").
+
+## Kiểm tra nhanh
+
+- Xác định chỉ một máy hay nhiều máy cùng mất mạng.
+- Kiểm tra cáp/Wi-Fi, chế độ máy bay và biểu tượng mạng.
+- Chạy `ipconfig /all` và ghi lại IP, gateway, DNS.
 
 ## Nguyên nhân thường gặp
 
@@ -93,6 +100,8 @@ nslookup google.com
 Nếu `nslookup` báo lỗi, kiểm tra máy đang dùng DNS nào trong `ipconfig /all` và so với DNS chuẩn của công ty. Không tự đổi sang DNS công cộng khi máy cần truy cập tài nguyên nội bộ.
 
 ### Bước 6: Đặt lại cấu hình mạng của Windows (cần quyền quản trị)
+
+Chỉ chạy bước này sau khi đã ghi lại cấu hình IP tĩnh, DNS, proxy hoặc VPN nếu máy đang dùng cấu hình đặc biệt.
 
 Mở Command Prompt bằng "Run as administrator":
 

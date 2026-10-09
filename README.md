@@ -4,6 +4,21 @@ Bộ hướng dẫn xử lý sự cố thường gặp cho Helpdesk / IT Support
 
 > Các bài viết dựa trên môi trường Windows 10/11 trong doanh nghiệp (Active Directory, Microsoft 365). Lệnh nào cần quyền quản trị đều được ghi chú rõ. Hãy thử trên máy ảo hoặc home lab trước khi áp dụng vào hệ thống thật.
 
+## Cách dùng wiki
+
+- Dùng mục **Câu hỏi cần hỏi người dùng trước** để phân loại sự cố và xác định phạm vi ảnh hưởng.
+- Làm theo các bước từ trên xuống dưới, ghi lại kết quả kiểm tra vào ticket.
+- Nếu sự cố ảnh hưởng nhiều người, có dấu hiệu bảo mật, mất dữ liệu hoặc cần thay đổi hạ tầng, dừng xử lý tại máy người dùng và chuyển cấp theo mục **Khi nào chuyển cấp**.
+
+## Mức ưu tiên tham khảo
+
+| Mức | Khi nào dùng | Ví dụ |
+| --- | --- | --- |
+| P1 | Ảnh hưởng toàn công ty, ngừng dịch vụ chính hoặc nghi sự cố bảo mật nghiêm trọng | VPN toàn công ty không kết nối, ransomware, Microsoft 365 diện rộng |
+| P2 | Ảnh hưởng một phòng ban, nhiều người hoặc dịch vụ quan trọng bị gián đoạn | Print server lỗi, file share phòng ban không truy cập được |
+| P3 | Ảnh hưởng một người dùng, có cách xử lý tạm thời | Quên mật khẩu, máy in cá nhân không in, lỗi Outlook trên một máy |
+| P4 | Yêu cầu thường, không gián đoạn công việc ngay | Cài phần mềm đã phê duyệt, tư vấn cấu hình |
+
 ## Mục lục (20 bài)
 
 Trạng thái: ✅ đã viết
@@ -63,12 +78,20 @@ git init
 git add .
 git commit -m "Khởi tạo IT Support Wiki với 20 bài xử lý sự cố"
 git branch -M main
-git remote add origin https://github.com/<tên-người-dùng>/it-support-wiki.git
+git remote add origin https://github.com/V2309/It-support-wiki-.git
 git push -u origin main
 ```
 
-Tạo repository trống (không chọn README/license) trên GitHub trước khi chạy `git remote add`. Nên bật GitHub Pages hoặc ghim repository lên hồ sơ để nhà tuyển dụng dễ thấy.
+Repository đã được publish tại `https://github.com/V2309/It-support-wiki-`. Nên bật GitHub Pages hoặc ghim repository lên hồ sơ để nhà tuyển dụng dễ thấy.
+
+## Tài liệu tham khảo
+
+- [Microsoft Learn: Active Directory PowerShell](https://learn.microsoft.com/powershell/module/activedirectory/)
+- [Microsoft Learn: Microsoft Defender PowerShell](https://learn.microsoft.com/powershell/module/defender/)
+- [Microsoft Learn: System File Checker and DISM](https://learn.microsoft.com/troubleshoot/windows-server/installing-updates-features-roles/system-file-checker-and-dism)
+- [Microsoft Learn: Temporary Access Pass in Microsoft Entra ID](https://learn.microsoft.com/entra/identity/authentication/howto-authentication-temporary-access-pass)
+- [Microsoft Learn: Microsoft 365 admin center help](https://learn.microsoft.com/microsoft-365/admin/)
 
 ## Giấy phép
 
-Chọn một giấy phép (ví dụ MIT hoặc CC BY 4.0) và thêm file `LICENSE` trước khi công khai.
+Dự án sử dụng giấy phép MIT. Xem file [`LICENSE`](LICENSE).

@@ -3,6 +3,7 @@
 | | |
 | --- | --- |
 | Cấp độ | L1 |
+| Mức ưu tiên thường gặp | P3; P2 nếu nhiều người cùng không in được |
 | Thời gian xử lý ước tính | 10-20 phút |
 | Cần quyền quản trị | Có (khởi động lại Print Spooler, cài driver) |
 | Cập nhật lần cuối | 2026-10-09 |
@@ -20,6 +21,12 @@
 - Những người khác in được không?
 - In được từ tất cả ứng dụng hay chỉ một ứng dụng?
 - Máy in nối bằng USB, mạng nội bộ hay qua print server?
+
+## Kiểm tra nhanh
+
+- Kiểm tra màn hình máy in có báo hết giấy, kẹt giấy, hết mực hoặc lỗi phần cứng không.
+- Xác định chỉ một người hay nhiều người cùng không in được.
+- In thử từ Notepad hoặc in test page để loại trừ lỗi ứng dụng.
 
 ## Nguyên nhân thường gặp
 
@@ -59,6 +66,8 @@ ping <địa chỉ IP của máy in>
 Nếu IP máy in đã đổi, cập nhật lại cổng in (Printer properties > Ports > Configure Port) hoặc nhờ nhóm mạng đặt IP tĩnh/DHCP reservation cho máy in.
 
 ### Bước 4: Xóa hàng đợi in bị kẹt (cần quyền quản trị)
+
+Thông báo trước cho người dùng vì thao tác này sẽ xóa các lệnh in đang chờ trên máy hiện tại.
 
 Mở Command Prompt bằng "Run as administrator":
 

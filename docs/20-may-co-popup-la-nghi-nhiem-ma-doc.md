@@ -3,6 +3,7 @@
 | | |
 | --- | --- |
 | Cấp độ | L1 / Security |
+| Mức ưu tiên thường gặp | P1/P2 nếu nghi ransomware, rò rỉ dữ liệu hoặc cảnh báo EDR mức cao; P3 nếu chỉ một trình duyệt có popup quảng cáo |
 | Thời gian xử lý ước tính | 15-60 phút |
 | Cần quyền quản trị | Có |
 | Cập nhật lần cuối | 2026-10-09 |
@@ -19,6 +20,12 @@
 - Popup xuất hiện khi mở trang nào hoặc ứng dụng nào?
 - Có vừa tải file, cài phần mềm, mở email đính kèm lạ không?
 - Có dữ liệu quan trọng bị mất, bị mã hóa hoặc bị gửi ra ngoài không?
+
+## Kiểm tra nhanh
+
+- Nếu có dấu hiệu ransomware hoặc EDR cảnh báo mức cao, cô lập máy ngay và chuyển Security.
+- Chụp ảnh popup/cảnh báo, ghi URL, tên file và thời điểm xảy ra.
+- Không tự xóa file nghi vấn nếu nhóm Security cần giữ bằng chứng.
 
 ## Nguyên nhân thường gặp
 

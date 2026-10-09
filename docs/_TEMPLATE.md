@@ -3,6 +3,7 @@
 | | |
 | --- | --- |
 | Cấp độ | L1 / L2 |
+| Mức ưu tiên thường gặp | P1 / P2 / P3 / P4 |
 | Thời gian xử lý ước tính | ... phút |
 | Cần quyền quản trị | Có / Không |
 | Cập nhật lần cuối | YYYY-MM-DD |
@@ -16,6 +17,12 @@ Người dùng thấy gì, báo lỗi gì (ghi nguyên văn thông báo lỗi n�
 - Sự cố bắt đầu từ khi nào? Có thay đổi nào gần đây không?
 - Chỉ một người bị hay nhiều người cùng bị?
 - ...
+
+## Kiểm tra nhanh
+
+- Xác định phạm vi: một người, nhiều người hay toàn bộ hệ thống.
+- Ghi lại thông báo lỗi nguyên văn hoặc ảnh chụp màn hình.
+- Kiểm tra thay đổi gần đây: đổi mật khẩu, cập nhật Windows, cài phần mềm, đổi vị trí làm việc.
 
 ## Nguyên nhân thường gặp
 

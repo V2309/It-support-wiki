@@ -3,6 +3,7 @@
 | | |
 | --- | --- |
 | Cấp độ | L1 |
+| Mức ưu tiên thường gặp | P3; P2 nếu nhiều máy cùng chậm sau cập nhật hoặc chính sách mới |
 | Thời gian xử lý ước tính | 20-45 phút |
 | Cần quyền quản trị | Có nếu gỡ phần mềm hoặc thay đổi startup |
 | Cập nhật lần cuối | 2026-10-09 |
@@ -18,6 +19,12 @@
 - Máy chậm từ khi nào? Chậm mọi lúc hay chỉ khi mở ứng dụng nào?
 - Có vừa cài phần mềm, cập nhật Windows hoặc mở file lạ không?
 - Máy dùng HDD hay SSD, RAM bao nhiêu?
+
+## Kiểm tra nhanh
+
+- Mở Task Manager để xem CPU, RAM, Disk có chạm 100% không.
+- Kiểm tra ổ C còn dung lượng trống không.
+- Hỏi người dùng có vừa mở file lạ, cài phần mềm mới hoặc thấy popup bất thường không.
 
 ## Nguyên nhân thường gặp
 
@@ -47,8 +54,8 @@ Task Manager > Startup apps, tắt ứng dụng không cần chạy cùng Window
 
 ### Bước 4: Kiểm tra sức khỏe ổ đĩa
 
-```cmd
-wmic diskdrive get status
+```powershell
+Get-CimInstance Win32_DiskDrive | Select-Object Model, Status
 chkdsk C: /scan
 ```
 

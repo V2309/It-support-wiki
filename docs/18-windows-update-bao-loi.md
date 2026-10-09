@@ -3,6 +3,7 @@
 | | |
 | --- | --- |
 | Cấp độ | L1 / L2 |
+| Mức ưu tiên thường gặp | P3; P2 nếu nhiều máy cùng lỗi trong vòng cập nhật |
 | Thời gian xử lý ước tính | 20-45 phút |
 | Cần quyền quản trị | Có |
 | Cập nhật lần cuối | 2026-10-09 |
@@ -18,6 +19,12 @@
 - Mã lỗi chính xác là gì?
 - Máy có đủ dung lượng ổ C không?
 - Máy đang dùng mạng công ty, VPN hay mạng ngoài?
+
+## Kiểm tra nhanh
+
+- Ghi lại mã lỗi chính xác và ảnh chụp màn hình Windows Update.
+- Kiểm tra ổ C còn ít nhất 15-20 GB trống.
+- Xác định máy có thuộc nhóm cập nhật do WSUS/Intune quản lý không.
 
 ## Nguyên nhân thường gặp
 
@@ -54,6 +61,8 @@ net start bits
 ```
 
 ### Bước 4: Reset cache Windows Update
+
+Chỉ thực hiện khi đã ghi lại mã lỗi và xác nhận máy không đang cài đặt dở bản cập nhật. Không tắt máy giữa chừng trong quá trình dừng/khởi động dịch vụ.
 
 ```cmd
 net stop wuauserv

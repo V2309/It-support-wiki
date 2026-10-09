@@ -3,6 +3,7 @@
 | | |
 | --- | --- |
 | Cấp độ | L1 / L2 |
+| Mức ưu tiên thường gặp | P3; P2 nếu toàn bộ phòng ban không phân giải được tên miền nội bộ |
 | Thời gian xử lý ước tính | 10-25 phút |
 | Cần quyền quản trị | Có nếu đổi cấu hình card mạng |
 | Cập nhật lần cuối | 2026-10-09 |
@@ -18,6 +19,12 @@
 - Lỗi xảy ra với mọi website hay chỉ website nội bộ?
 - Người dùng đang ở mạng công ty, Wi-Fi khách hay VPN?
 - Có vừa đổi DNS, proxy, VPN hoặc phần mềm bảo mật không?
+
+## Kiểm tra nhanh
+
+- Chạy `ipconfig /displaydns` hoặc `nslookup` xem DNS Server IP hiện tại của máy là IP nội bộ (Domain Controller) hay IP công cộng (8.8.8.8 / 1.1.1.1).
+- So sánh kết quả `nslookup` trên máy bị lỗi với một máy trạm hoạt động bình thường bên cạnh.
+- Kiểm tra file `hosts` tại `C:\Windows\System32\drivers\etc\hosts` xem có bản ghi tĩnh nào bị ghi đè không.
 
 ## Nguyên nhân thường gặp
 

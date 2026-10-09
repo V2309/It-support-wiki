@@ -3,6 +3,7 @@
 | | |
 | --- | --- |
 | Cấp độ | L1 / L2 |
+| Mức ưu tiên thường gặp | P3; P2 nếu ảnh hưởng tài khoản quản lý/VIP cần truy cập khẩn |
 | Thời gian xử lý ước tính | 10-25 phút |
 | Cần quyền quản trị | Có nếu reset phương thức MFA |
 | Cập nhật lần cuối | 2026-10-09 |
@@ -18,6 +19,12 @@
 - Còn giữ điện thoại cũ không?
 - Có đăng ký phương thức dự phòng như SMS, cuộc gọi, mã khôi phục không?
 - Yêu cầu đến từ người dùng thật hay do người khác nhờ hộ?
+
+## Kiểm tra nhanh
+
+- Kiểm tra xem người dùng có bấm vào "Sign in another way" trên màn hình đăng nhập để dùng phương thức khác (SMS/email dự phòng) chưa.
+- Kiểm tra điện thoại mới đã bật kết nối mạng (Wi-Fi/4G) và cho phép thông báo (Notifications) cho app Microsoft Authenticator chưa.
+- Kiểm tra cài đặt ngày giờ trên điện thoại mới có bật chế độ "Tự động cập nhật giờ" (Set Automatically) không.
 
 ## Nguyên nhân thường gặp
 

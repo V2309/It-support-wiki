@@ -3,6 +3,7 @@
 | | |
 | --- | --- |
 | Cấp độ | L1 |
+| Mức ưu tiên thường gặp | P3; P2 nếu đang trong cuộc họp lãnh đạo hoặc hội thảo quan trọng |
 | Thời gian xử lý ước tính | 10-20 phút |
 | Cần quyền quản trị | Không, trừ khi cài driver |
 | Cập nhật lần cuối | 2026-10-09 |
@@ -18,6 +19,12 @@
 - Dùng loa/micro tích hợp, tai nghe USB, Bluetooth hay jack 3.5 mm?
 - Lỗi xảy ra trong Teams, Zoom hay toàn bộ Windows?
 - Thiết bị có nút mute vật lý không?
+
+## Kiểm tra nhanh
+
+- Kiểm tra nút gạt/bấm tắt tiếng (Mute vật lý) trên thân tai nghe hoặc trên dây cáp.
+- Mở **Settings** > **Privacy & security** > **Microphone** và kiểm tra *"Microphone access"* cùng *"Let apps access your microphone"* có đang được BẬT (On) không.
+- Kiểm tra cài đặt thiết bị (Device Settings) ngay trong cuộc họp Teams/Zoom xem đã chọn đúng tên tai nghe hay đang chọn nhầm thiết bị khác.
 
 ## Nguyên nhân thường gặp
 

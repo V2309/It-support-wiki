@@ -3,6 +3,7 @@
 | | |
 | --- | --- |
 | Cấp độ | L1 |
+| Mức ưu tiên thường gặp | P3 |
 | Thời gian xử lý ước tính | 5-20 phút |
 | Cần quyền quản trị | Không, trừ khi cài driver |
 | Cập nhật lần cuối | 2026-10-09 |
@@ -18,6 +19,12 @@
 - Thiết bị có dây, USB receiver hay Bluetooth?
 - Có bị sau khi đổi cổng USB, thay pin hoặc cập nhật Windows không?
 - Thiết bị có hoạt động trên máy khác không?
+
+## Kiểm tra nhanh
+
+- Thử cắm đầu thu USB / cáp trực tiếp vào cổng USB trên thân máy (bỏ qua USB Hub hoặc Dock chuyển đổi).
+- Bấm phím `Caps Lock` hoặc `Num Lock` trên bàn phím xem đèn LED trạng thái có sáng/tắt không (để biết máy có còn nhận tín hiệu từ bàn phím không).
+- Với thiết bị không dây: Kiểm tra công tắc nguồn dưới đáy chuột/bàn phím và thay thử pin mới.
 
 ## Nguyên nhân thường gặp
 

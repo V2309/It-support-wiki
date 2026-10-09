@@ -3,21 +3,28 @@
 | | |
 | --- | --- |
 | Cấp độ | L1 / L2 |
+| Mức ưu tiên thường gặp | P3; P2 nếu thư mục chia sẻ chung của cả phòng ban bị ngắt |
 | Thời gian xử lý ước tính | 15-30 phút |
 | Cần quyền quản trị | Có nếu cấp quyền hoặc sửa share |
 | Cập nhật lần cuối | 2026-10-09 |
 
 ## Triệu chứng
 
-- Không mở được ổ mạng như `\\server\share` hoặc ổ mapped drive.
-- Báo "Access denied", "Network path not found" hoặc yêu cầu nhập mật khẩu.
-- Người dùng khác vào được cùng thư mục.
+- Không mở được ổ mạng như `\\server\share` hoặc ổ mapped drive (ổ Z:, Y:).
+- Báo "Access denied", "Network path not found" hoặc liên tục yêu cầu nhập mật khẩu mạng.
+- Người dùng khác vào được cùng thư mục, hoặc cả phòng ban cùng bị ngắt kết nối.
 
 ## Câu hỏi cần hỏi người dùng trước
 
 - Đường dẫn share chính xác là gì?
 - Người dùng đang ở văn phòng hay kết nối VPN?
 - Trước đây đã truy cập được chưa, hay là yêu cầu quyền mới?
+
+## Kiểm tra nhanh
+
+- Thử truy cập bằng địa chỉ IP thay vì tên máy chủ trong File Explorer (ví dụ `\\192.168.1.10\share`) để loại trừ lỗi DNS.
+- Kiểm tra xem đồng nghiệp ngồi cạnh cùng phòng ban có vào được thư mục này không (phân biệt lỗi quyền cá nhân hay lỗi file server).
+- Kiểm tra kết nối mạng nội bộ hoặc trạng thái kết nối VPN (nếu đang làm việc tại nhà/từ xa).
 
 ## Nguyên nhân thường gặp
 

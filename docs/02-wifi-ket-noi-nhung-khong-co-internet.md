@@ -3,6 +3,7 @@
 | | |
 | --- | --- |
 | Cấp độ | L1 |
+| Mức ưu tiên thường gặp | P3; P2 nếu nhiều người tại một khu vực cùng bị |
 | Thời gian xử lý ước tính | 10-20 phút |
 | Cần quyền quản trị | Không, trừ khi cài lại driver |
 | Cập nhật lần cuối | 2026-10-09 |
@@ -18,6 +19,12 @@
 - Wi-Fi nào đang kết nối? Có đúng SSID công ty không?
 - Thiết bị khác của người dùng có vào Internet được không?
 - Lỗi bắt đầu sau khi đổi mật khẩu Wi-Fi, đổi vị trí ngồi hoặc cập nhật Windows không?
+
+## Kiểm tra nhanh
+
+- Kiểm tra xem máy có đang kết nối vào Wi-Fi Guest/Khách cần đăng nhập Captive Portal không.
+- Thử kết nối Wi-Fi bằng điện thoại tại cùng vị trí để so sánh.
+- Kiểm tra địa chỉ IP qua lệnh `ipconfig` xem có bị dải `169.254.x.x` (AP hết cấp DHCP) không.
 
 ## Nguyên nhân thường gặp
 

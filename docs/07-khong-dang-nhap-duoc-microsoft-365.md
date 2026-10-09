@@ -3,6 +3,7 @@
 | | |
 | --- | --- |
 | Cấp độ | L1 / L2 |
+| Mức ưu tiên thường gặp | P3; P1/P2 nếu dịch vụ Microsoft 365 gián đoạn diện rộng |
 | Thời gian xử lý ước tính | 10-30 phút |
 | Cần quyền quản trị | Có nếu kiểm tra license, MFA hoặc trạng thái tài khoản |
 | Cập nhật lần cuối | 2026-10-09 |
@@ -18,6 +19,12 @@
 - Lỗi xảy ra trên web, app desktop hay cả hai?
 - Có đổi mật khẩu, đổi điện thoại MFA hoặc đi công tác nước ngoài không?
 - Người dùng khác có đăng nhập được không?
+
+## Kiểm tra nhanh
+
+- Thử đăng nhập trên trình duyệt bằng chế độ ẩn danh (InPrivate/Incognito) để loại trừ cache/cookie cũ.
+- Kiểm tra trạng thái tài khoản trên Microsoft Entra admin center (`Block sign-in`, `Account status`).
+- Kiểm tra trang **Service Health** trong Microsoft 365 admin center xem Microsoft có đang bị sự cố toàn cầu không.
 
 ## Nguyên nhân thường gặp
 

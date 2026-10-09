@@ -3,14 +3,15 @@
 | | |
 | --- | --- |
 | Cấp độ | L1 / L2 |
+| Mức ưu tiên thường gặp | P4 (Yêu cầu tiêu chuẩn); P3 nếu cần cho dự án/công việc gấp |
 | Thời gian xử lý ước tính | 10-30 phút |
 | Cần quyền quản trị | Có |
 | Cập nhật lần cuối | 2026-10-09 |
 
 ## Triệu chứng
 
-- Windows yêu cầu tài khoản administrator khi cài phần mềm.
-- Cài đặt báo "Access denied", "You do not have sufficient privileges".
+- Windows hiện màn hình UAC yêu cầu nhập tài khoản và mật khẩu Administrator khi chạy bộ cài (`.exe`, `.msi`).
+- Cài đặt báo "Access denied", "You do not have sufficient privileges" hoặc "This app has been blocked by your system administrator".
 - Microsoft Store hoặc Company Portal không cài được ứng dụng.
 
 ## Câu hỏi cần hỏi người dùng trước
@@ -18,6 +19,12 @@
 - Phần mềm gì, phục vụ công việc nào, có được công ty phê duyệt không?
 - Người dùng tải bộ cài từ đâu?
 - Máy thuộc quản lý Intune/SCCM/Group Policy không?
+
+## Kiểm tra nhanh
+
+- Kiểm tra xem ứng dụng đã có sẵn trên kho ứng dụng tự phục vụ của công ty (**Company Portal** hoặc **Software Center**) chưa (người dùng tự bấm cài không cần quyền admin).
+- Xác định thông báo chặn là do hộp thoại UAC thông thường hay do chính sách bảo mật AppLocker / WDAC / Antivirus chặn file thực thi.
+- Kiểm tra chữ ký số (Digital Signature) của file cài đặt: Chuột phải vào file `.exe` > **Properties** > **Digital Signatures** xem có chứng chỉ hợp lệ không.
 
 ## Nguyên nhân thường gặp
 

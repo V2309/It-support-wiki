@@ -3,6 +3,7 @@
 | | |
 | --- | --- |
 | Cấp độ | L1 |
+| Mức ưu tiên thường gặp | P3; P2 nếu trong cuộc họp khẩn với đối tác hoặc ban lãnh đạo |
 | Thời gian xử lý ước tính | 10-20 phút |
 | Cần quyền quản trị | Không, trừ khi cài driver |
 | Cập nhật lần cuối | 2026-10-09 |
@@ -18,6 +19,12 @@
 - Camera tích hợp hay webcam rời?
 - Camera có hoạt động trong ứng dụng Camera của Windows không?
 - Có nắp che camera hoặc phím tắt privacy không?
+
+## Kiểm tra nhanh
+
+- Kiểm tra cần gạt / nắp che vật lý (Privacy shutter) phía trước ống kính webcam laptop.
+- Kiểm tra các phím chức năng (thường là `F8`, `F10` hoặc `Fn + phím camera`) trên laptop Asus, Lenovo, MSI, HP có đang tắt camera ở cấp độ phần cứng không.
+- Mở nhanh ứng dụng **Camera** có sẵn của Windows (Start > gõ "Camera") xem có xuất hiện hình ảnh không.
 
 ## Nguyên nhân thường gặp
 

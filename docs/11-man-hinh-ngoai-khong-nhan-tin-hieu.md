@@ -3,6 +3,7 @@
 | | |
 | --- | --- |
 | Cấp độ | L1 |
+| Mức ưu tiên thường gặp | P3; P2 nếu là màn hình máy chiếu/TV phòng họp khẩn |
 | Thời gian xử lý ước tính | 10-25 phút |
 | Cần quyền quản trị | Không, trừ khi cài driver |
 | Cập nhật lần cuối | 2026-10-09 |
@@ -18,6 +19,12 @@
 - Dùng cáp HDMI, DisplayPort, USB-C hay dock?
 - Màn hình và cáp này có hoạt động với máy khác không?
 - Lỗi xảy ra sau khi đổi dock, đổi bàn làm việc hoặc cập nhật driver không?
+
+## Kiểm tra nhanh
+
+- Bấm tổ hợp phím `Win + P` và chọn **Duplicate** hoặc **Extend** (đảm bảo không bị kẹt ở "PC screen only").
+- Bấm phím tắt khởi động lại driver card màn hình: `Win + Ctrl + Shift + B` (màn hình sẽ chớp nhẹ một lần).
+- Kiểm tra đèn LED nguồn trên màn hình ngoài và đảm bảo dock sạc đã cắm nguồn điện AC riêng.
 
 ## Nguyên nhân thường gặp
 

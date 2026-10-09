@@ -3,6 +3,7 @@
 | | |
 | --- | --- |
 | Cấp độ | L1 / L2 |
+| Mức ưu tiên thường gặp | P3; P2 nếu máy sập nguồn không thể bật khi cần làm việc khẩn |
 | Thời gian xử lý ước tính | 15-30 phút |
 | Cần quyền quản trị | Không, trừ khi cập nhật BIOS/firmware |
 | Cập nhật lần cuối | 2026-10-09 |
@@ -18,6 +19,16 @@
 - Dùng sạc gốc, dock USB-C hay sạc khác?
 - Có thông báo adapter watt thấp không?
 - Pin tụt nhanh từ khi nào? Có chạy ứng dụng nặng hay họp video liên tục không?
+
+## Kiểm tra nhanh
+
+- Kiểm tra đèn LED chỉ báo sạc cạnh cổng cắm nguồn (sáng trắng/cam hay nhấp nháy/tắt hẳn).
+- Cầm thử củ sạc (adapter) xem có ấm không (nếu nguội hoàn toàn là sạc hỏng hoặc mất nguồn điện ổ cắm).
+- Chạy nhanh lệnh xuất báo cáo độ chai pin:
+  ```cmd
+  powercfg /batteryreport /output C:\battery-report.html
+  ```
+  Mở file html đối chiếu **Design Capacity** (dung lượng thiết kế) và **Full Charge Capacity** (dung lượng thực tế hiện tại).
 
 ## Nguyên nhân thường gặp
 

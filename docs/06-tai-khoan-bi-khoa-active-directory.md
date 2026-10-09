@@ -3,6 +3,7 @@
 | | |
 | --- | --- |
 | Cấp độ | L1 / L2 |
+| Mức ưu tiên thường gặp | P3; P2 nếu tài khoản quản lý/VIP hoặc bị khóa hàng loạt |
 | Thời gian xử lý ước tính | 10-30 phút |
 | Cần quyền quản trị | Có |
 | Cập nhật lần cuối | 2026-10-09 |
@@ -18,6 +19,12 @@
 - Gần đây có đổi mật khẩu không?
 - Có dùng email trên điện thoại, Outlook cũ, VPN, Wi-Fi công ty hoặc ứng dụng lưu mật khẩu không?
 - Tài khoản bị khóa một lần hay lặp lại liên tục?
+
+## Kiểm tra nhanh
+
+- Xác minh trạng thái khóa tài khoản trên Active Directory (`Get-ADUser -Identity "ten.nguoidung" -Properties LockedOut`).
+- Kiểm tra xem người dùng có đăng nhập trên nhiều thiết bị cùng lúc (điện thoại, laptop thứ hai, máy ảo).
+- Xác định tài khoản cá nhân hay tài khoản quản trị viên.
 
 ## Nguyên nhân thường gặp
 
@@ -51,9 +58,18 @@ Kiểm tra Credential Manager:
 
 Control Panel > Credential Manager > Windows Credentials, xóa thông tin cũ liên quan đến domain, file share, Outlook hoặc VPN.
 
-### Bước 4: Kiểm tra sự kiện đăng nhập sai
+### Bước 4: Kiểm tra sự kiện đăng nhập sai (Event ID 4740)
 
-Trên domain controller, tìm Event ID `4740` để biết máy nào gây khóa tài khoản. Bước này thường do L2/AD admin thực hiện.
+Trên Domain Controller hoặc máy quản trị, chạy PowerShell để tìm chính xác máy tính hoặc thiết bị phát sinh lần khóa tài khoản gần nhất:
+
+```powershell
+Get-WinEvent -FilterHashtable @{LogName='Security';Id=4740} -MaxEvents 5 | 
+    Select-Object TimeCreated, 
+        @{N='Account';E={$_.Properties[0].Value}}, 
+        @{N='CallerComputer';E={$_.Properties[1].Value}}
+```
+
+Giá trị tại cột **CallerComputer** chính là tên máy tính hoặc nguồn IP đang gửi mật khẩu cũ lên hệ thống.
 
 ### Bước 5: Xử lý nguồn gây khóa
 

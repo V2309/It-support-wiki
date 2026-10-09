@@ -19,9 +19,25 @@ Bộ hướng dẫn xử lý sự cố thường gặp cho Helpdesk / IT Support
 | P3 | Ảnh hưởng một người dùng, có cách xử lý tạm thời | Quên mật khẩu, máy in cá nhân không in, lỗi Outlook trên một máy |
 | P4 | Yêu cầu thường, không gián đoạn công việc ngay | Cài phần mềm đã phê duyệt, tư vấn cấu hình |
 
-## Mục lục (20 bài)
+## Bảng tra cứu nhanh theo triệu chứng / mã lỗi
 
-Trạng thái: ✅ đã viết
+| Dấu hiệu / Mã lỗi nhận diện | Khả năng cao | Xem bài hướng dẫn |
+| --- | --- | --- |
+| `169.254.x.x`, "No internet, secured" | Lỗi cấp phát DHCP / Wi-Fi | [Bài 01](docs/01-khong-vao-duoc-mang.md), [Bài 02](docs/02-wifi-ket-noi-nhung-khong-co-internet.md) |
+| Ping IP được nhưng không vào được web, `NXDOMAIN` | Lỗi phân giải DNS | [Bài 04](docs/04-loi-dns.md) |
+| "The referenced account is currently locked out" | Khóa tài khoản do sai pass liên tục | [Bài 06](docs/06-tai-khoan-bi-khoa-active-directory.md) |
+| Màn hình xanh yêu cầu nhập khóa 48 chữ số (Recovery Key ID) | BitLocker kích hoạt sau update BIOS/TPM | [Bài 21](docs/21-khoa-bitlocker-recovery-key.md) |
+| Teams báo `CAA70004`, `80090016`, màn hình trắng xóa | Lỗi cache token xác thực New Teams | [Bài 22](docs/22-microsoft-teams-bao-loi.md) |
+| OneDrive hiện `Processing changes`, icon X đỏ | Lỗi kẹt cache sync hoặc file quá dài | [Bài 23](docs/23-onedrive-loi-dong-bo.md) |
+| Màn hình xanh sập nguồn `CRITICAL_PROCESS_DIED`, `IRQL_...` | Xung đột driver, hỏng file Windows hoặc lỗi RAM | [Bài 24](docs/24-man-hinh-xanh-bsod.md) |
+| Outlook báo `Need Password`, `Disconnected`, kẹt Outbox | Lỗi Modern Auth hoặc kẹt file OST | [Bài 15](docs/15-outlook-khong-gui-hoac-nhan-duoc-thu.md) |
+| Màn hình ngoài báo "No signal", nhấp nháy | Lỗi xuất hình Windows, dock hoặc cáp | [Bài 11](docs/11-man-hinh-ngoai-khong-nhan-tin-hieu.md) |
+| Windows Update báo `0x80070002`, `0x8024a105` | Cache Windows Update hỏng, dịch vụ tắt | [Bài 18](docs/18-windows-update-bao-loi.md) |
+| File bị đổi đuôi lạ, popup đòi tiền chuộc, EDR báo động | Nghi nhiễm Ransomware / Mã độc | [Bài 20](docs/20-may-co-popup-la-nghi-nhiem-ma-doc.md) |
+
+## Mục lục (24 bài)
+
+Trạng thái: ✅ đã hoàn thiện đầy đủ
 
 ### Mạng
 
@@ -41,7 +57,7 @@ Trạng thái: ✅ đã viết
 | 07 | [Không đăng nhập được Microsoft 365](docs/07-khong-dang-nhap-duoc-microsoft-365.md) | ✅ |
 | 08 | [Đổi điện thoại, không nhận mã xác thực MFA](docs/08-doi-dien-thoai-khong-nhan-ma-mfa.md) | ✅ |
 
-### Thiết bị
+### Thiết bị và phần cứng
 
 | # | Bài | Trạng thái |
 | --- | --- | --- |
@@ -51,8 +67,10 @@ Trạng thái: ✅ đã viết
 | 12 | [Bàn phím hoặc chuột không hoạt động](docs/12-ban-phim-hoac-chuot-khong-hoat-dong.md) | ✅ |
 | 13 | [Không có âm thanh, micro không hoạt động trong cuộc họp](docs/13-khong-co-am-thanh-micro-khong-hoat-dong.md) | ✅ |
 | 14 | [Laptop không sạc hoặc pin tụt nhanh](docs/14-laptop-khong-sac-hoac-pin-tut-nhanh.md) | ✅ |
+| 21 | [Kẹt màn hình khóa BitLocker Recovery Key](docs/21-khoa-bitlocker-recovery-key.md) | ✅ |
+| 24 | [Màn hình xanh chết chóc (BSOD)](docs/24-man-hinh-xanh-bsod.md) | ✅ |
 
-### Phần mềm và dịch vụ
+### Phần mềm và dịch vụ đám mây
 
 | # | Bài | Trạng thái |
 | --- | --- | --- |
@@ -62,6 +80,8 @@ Trạng thái: ✅ đã viết
 | 18 | [Windows Update báo lỗi](docs/18-windows-update-bao-loi.md) | ✅ |
 | 19 | [Không truy cập được ổ đĩa chia sẻ](docs/19-khong-truy-cap-duoc-o-dia-chia-se.md) | ✅ |
 | 20 | [Máy có popup lạ, nghi nhiễm mã độc](docs/20-may-co-popup-la-nghi-nhiem-ma-doc.md) | ✅ |
+| 22 | [Microsoft Teams báo lỗi, kẹt đăng nhập hoặc trắng màn hình](docs/22-microsoft-teams-bao-loi.md) | ✅ |
+| 23 | [OneDrive báo lỗi đồng bộ, xung đột file hoặc kẹt Processing](docs/23-onedrive-loi-dong-bo.md) | ✅ |
 
 ## Cách viết một bài mới
 

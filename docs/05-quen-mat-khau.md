@@ -3,6 +3,7 @@
 | | |
 | --- | --- |
 | Cấp độ | L1 |
+| Mức ưu tiên thường gặp | P3; P2 nếu là tài khoản lãnh đạo/VIP cần xử lý khẩn |
 | Thời gian xử lý ước tính | 5-10 phút |
 | Cần quyền quản trị | Có (đặt lại mật khẩu cho người khác) |
 | Cập nhật lần cuối | 2026-10-09 |
@@ -11,6 +12,12 @@
 
 - Người dùng không nhớ mật khẩu Windows, Microsoft 365 hoặc ứng dụng nội bộ.
 - Báo "The user name or password is incorrect" hoặc tài khoản bị khóa sau nhiều lần nhập sai.
+
+## Kiểm tra nhanh
+
+- Kiểm tra xem phím **Caps Lock** hoặc **Num Lock** có đang bị bật vô tình không.
+- Kiểm tra bộ gõ tiếng Việt (Unikey/EVKey) có đang bật chế độ tiếng Việt (chữ `V` thay vì `E`) khiến ký tự mật khẩu bị biến đổi không (ví dụ gõ `aa` thành `â`).
+- Kiểm tra trạng thái tài khoản trên AD / Entra ID xem tài khoản có đang bị Disable hoặc Lockout không trước khi vội reset mật khẩu.
 
 ## Nguyên tắc bảo mật (đọc trước khi làm)
 

@@ -3,6 +3,7 @@
 | | |
 | --- | --- |
 | Cấp độ | L1 / L2 |
+| Mức ưu tiên thường gặp | P3; P1/P2 nếu hệ thống VPN toàn công ty hoặc nhiều người làm việc từ xa cùng bị |
 | Thời gian xử lý ước tính | 15-30 phút |
 | Cần quyền quản trị | Một số bước (cài lại client, đổi cấu hình) |
 | Cập nhật lần cuối | 2026-10-09 |
@@ -22,6 +23,12 @@ Cách xử lý phụ thuộc phần mềm VPN công ty dùng (GlobalProtect, For
 - Thông báo lỗi chính xác là gì? (nhờ chụp màn hình)
 - VPN dùng được lần cuối khi nào? Có đổi mật khẩu, đổi máy, cập nhật Windows gần đây không?
 - Những người khác có kết nối được không?
+
+## Kiểm tra nhanh
+
+- Thử phát Wi-Fi từ 4G điện thoại để loại trừ mạng Wi-Fi tại nhà/khách sạn chặn cổng VPN (IPSec, SSL, UDP 4500).
+- Kiểm tra đồng hồ hệ thống trên Windows xem có bị lệch giờ so với thực tế không.
+- Kiểm tra tài khoản người dùng có đang bị khóa (Lockout) hoặc hết hạn mật khẩu trên AD không.
 
 ## Nguyên nhân thường gặp
 
